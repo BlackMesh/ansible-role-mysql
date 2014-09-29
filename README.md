@@ -22,7 +22,6 @@ them are as follows:
 
       mysql_port: 3306                 # The port for mysql server to listen
       mysql_bind_address: "0.0.0.0"    # The bind address for mysql server
-      mysql_root_db_pass: foobar       # The root DB password
 
       # A list that has all the databases to be
       # created and their replication status:
