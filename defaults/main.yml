@@ -19,5 +19,5 @@ mysql_repl_user:
   - name: repl
     pass: foobar
 
-mysql_repl_role: master
+mysql_repl_role: none
 mysql_db_id: 7
