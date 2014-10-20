@@ -18,5 +18,5 @@ mysql_bind_address: "0.0.0.0"
 #  - name: repl
 #    pass: foobar
 
-mysql_repl_role: master
+mysql_repl_role: none
 mysql_db_id: 7

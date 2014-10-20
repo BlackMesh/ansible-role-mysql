@@ -73,8 +73,6 @@
   with_items: mysql_users
   when: item.pass is not defined and mysql_users|lower() != 'none'
 
-- debug: msg="this is the users {{ mysql_users }}"
-
 - name: Create the replication users
   mysql_user: name={{ item.name }}  host="%" password="{{ item.pass| lookup('password', '/tmp/passwords/mysql/' + item.name +' chars=ascii_letters,digits length=14') }}" priv=*.*:"REPLICATION SLAVE" state=present
   with_items: mysql_repl_user
